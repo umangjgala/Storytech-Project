@@ -1,0 +1,909 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: 'Metropolis Regular';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Metropolis Regular'), url('/metropolis/Metropolis-Regular.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'Domine';
+    src: url('/font/Domine-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Domine';
+    src: url('Domine-Regular.eot');
+    src: local('Domine'), local('Domine-Regular'),
+        url('Domine-Regular.eot?#iefix') format('embedded-opentype'),
+        url('Domine-Regular.woff2') format('woff2'),
+        url('Domine-Regular.woff') format('woff'),
+        url('Domine-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.section {
+    background-image: url("https://t3.ftcdn.net/jpg/02/09/74/82/360_F_209748224_3R1wKkuJsMns7kyA59gfB1XtMdumje9c.jpg");
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+}
+
+.section .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.section .navbar .image {
+    width: 200px;
+    height: 68px;
+    margin-top: 24px;
+    margin-left: 50px;
+}
+
+.section .navbar .menuItems {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    margin: 30px;
+}
+
+.section .navbar .menuItems .menuIcon {
+    align-items: center;
+}
+
+.section .navbar .menu {
+    font-family: "metropolis", sans-serif;
+    letter-spacing: 0.4rem;
+    font-size: 100%;
+    font-weight: lighter;
+    color: white;
+    align-items: center;
+}
+
+.section .menuIcon {
+    width: 50px;
+}
+
+.section .content{
+    padding: 8% 10% 0 10%;
+}
+
+.section .content h1 {
+    font-family: "Domine", sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    margin-top: 0;
+    color: #ffffff;
+    font-size: 90px;
+}
+
+.section .paragraph {
+    display: flex;
+    align-items: center;
+}
+
+.section .bar {
+    background-color: #e94e3b;
+    height: 2px ;
+    width: 4%;
+    align-items: center;
+    margin-left: 10%;
+}
+
+.section .para {
+    font-family: "Metropolis Regular", sans-serif;
+    line-height: 1.421;
+    color: rgba(255, 255, 255, 0.8);
+    margin-top: 2.4rem;
+    font-size: 220%;
+    font-weight: lighter;
+    letter-spacing: 1px;
+    margin-left: 30px;
+}
+
+.section .socialHandles {
+    margin-left: 5%;
+    margin-top: 7%;
+    margin-right: 3%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.section .socialHandles .socialSub {
+    display: inline;
+    margin-right: 15px;
+    font-family: "Metropolis Regular", sans-serif;
+    font-size: 90%;
+    color: white;
+    font-weight: lighter;
+    cursor: pointer;
+    padding-bottom: 1%;
+}
+
+.section .socialHandles .socialSub:hover {
+    border-bottom: 2px solid white;
+}
+
+.section .socialHandles .socialSub1 {
+    display: inline;
+    margin-right: 15px;
+    font-family: "Metropolis Regular", sans-serif;
+    font-size: 90%;
+    color: white;
+    font-weight: bold;
+    padding-bottom: 1%;
+}
+
+.section .socialHandles .scrollDown {
+    display: flex;
+    align-items: center;
+}
+
+.section .socialHandles .scrollDown .anchor {
+    padding-top: 8%;
+    padding-bottom: 8%  ;
+}
+
+.section .socialHandles .scrollDown .anchor:hover {
+    border-bottom: 1px solid white;
+}
+
+.section .socialHandles .scrollDown .roundscroll img {
+    align-items: center;
+    text-align: center;
+    padding: 23% 30% 26% 29%;
+    margin: 5px;
+}
+
+.section .socialHandles .scrollDown .scrollAnchor {
+    color: white;
+    text-decoration: none;
+    font-family: "Metropolis Regular", sans-serif;
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    margin-right: 20px;
+}
+
+.section .socialHandles .roundscroll{
+    border-radius: 50%;
+    background-color: white;
+    width: 50px;
+    height: 50px;
+} 
+
+.section .sidebar {
+    position: fixed;
+    width: 300px;
+    top: 0;
+    right: -300px;
+    background-color: black;
+    color: white;
+    height: 100vh;
+    transition: right 0.4s ease;
+}
+
+.section .sidebar.show {
+    right:0px;
+}
+
+.section .sidebar .text {
+    color: #e94e3b;
+    font-family: "Metropolis Regular", sans-serif;
+    font-size: 12px;
+    letter-spacing: 1px;
+    font-weight: bold;
+    margin: 30px;
+    margin-top: 50px;
+}
+
+.section .sidebar ul {
+    list-style-type: none;
+}
+
+.section .sidebar li  {
+    margin-top: 20px;
+}
+
+.section .sidebar li a {
+    color: white;
+    text-decoration: none;
+    font-family: "Metropolis Regular", sans-serif;
+    font-size: 12px;
+    letter-spacing: 1px;
+    font-weight: bold;
+    margin: 30px;
+    margin-top: 50px;
+}
+
+.section .sidebar .imagesIcon img {
+    width: 20px;
+    margin-top: 10px;
+    margin-left: 30px;
+}
+
+.section2 {
+    width: 100%;
+    height: 100vh;
+}
+
+.section2 h3 {
+    margin: 0% 10% 2% 10%;
+    padding-top: 10%;
+    top: 0;
+    font-family: "Metropolis Regular", sans-serif;
+    color: #e94e3b;
+    font-weight: light;
+    font-size: 16px;
+    letter-spacing: 3px;
+}
+
+.section2 h1 {
+    margin: 5% 10% 5% 10%;
+    font-family: "Domine", sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    margin-top: 0;
+    font-size: 52px;
+}
+
+.section2 p {
+    margin: 0% 10%;
+    color: rgba(85, 85, 85, 0.95);
+    font-family: "Metropolis Regular", sans-serif;
+    letter-spacing: 1px;
+    font-size: 25px;
+    line-height: 175%;
+}
+
+.section3 {
+    display: flex;
+    margin: 0% 10%;
+}
+
+.section3 .firstBox {
+    display: flex;
+    margin-bottom: 10%;
+}
+
+.section3 .first {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.section3 .first .circle {
+    width: 50px;
+    height: 50px;
+    color: white;
+    background-color: #26bfb5 ;
+    border-radius: 50%;
+    font-size: 120%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Metropolis Regular", sans-serif;
+    font-weight: bold;
+    margin: 0% 10%;
+}
+
+.section3 .first .line {
+    border-left: 1px solid rgba(0, 0, 0, 0.15);
+    height: 200px;
+    width: 1px;
+    background-color: rgba(0, 0, 0, 0.15);
+    margin-top: 30%;
+}
+
+.section3 .firstBox .firstContent h4 {
+    font-family: "Metropolis Regular", sans-serif;
+    font-size: 24px;
+    margin-left: 20px;
+    margin-top: 10px;
+}
+
+.section3 .firstBox .firstContent p {
+    font-family: "Metropolis Regular", sans-serif;
+    font-size: 24px;
+    color: #555555;
+    font-weight: bold;
+    font-size: 100%;
+    letter-spacing: 1px;
+    line-height: 175%;
+    margin-left: 20px;
+    margin-top: 20px;
+    margin-right: 40px;
+}
+
+.section4 {
+    width: 100%;
+    height: auto;
+    background-color: #f1f1f1;
+}
+
+.section4 h3 {
+    margin: 0% 10% 2% 10%;
+    padding-top: 10%;
+    top: 0;
+    font-family: "Metropolis Regular", sans-serif;
+    color: #e94e3b;
+    font-weight: light;
+    font-size: 16px;
+    letter-spacing: 3px;
+}
+
+.section4 h1 {
+    margin: 5% 10% 5% 10%;
+    font-family: "Domine", sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    margin-top: 0;
+    font-size: 60px;
+}
+
+.section4 p {
+    margin: 0% 10%;
+    color: rgba(85, 85, 85, 0.95);
+    font-family: "Metropolis Regular", sans-serif;
+    letter-spacing: 1px;
+    font-size: 25px;
+    line-height: 175%;
+}
+
+.section4 .firstBox {
+    display: flex;
+    justify-content: space-evenly;
+    margin-left: 9%;
+    margin-top: 9%;
+    padding-bottom: 9%;
+}
+
+.section4 .firstBox .firstContent img{ 
+    margin-left: 20px;
+}
+
+.section4 .firstBox .firstContent h4 {
+    font-family: "Metropolis Regular", sans-serif;
+    font-size: 20px;
+    margin-left: 20px;
+    color: black;
+    margin-top: 10px;
+}
+
+.section4 .firstBox .firstContent p {
+    font-family: "Metropolis Regular", sans-serif;
+    font-size: 24px;
+    color: #555555;
+    font-weight: bold;
+    font-size: 90%;
+    letter-spacing: 1px;
+    line-height: 175%;
+    margin-left: 20px;
+    margin-top: 20px;
+    margin-right: 100px;
+}
+
+.section4 {
+    width: 100%;
+    height: auto;
+}
+
+.section5 h3 {
+    margin: 0% 10% 2% 10%;
+    padding-top: 10%;
+    top: 0;
+    font-family: "Metropolis Regular", sans-serif;
+    color: #e94e3b;
+    font-weight: light;
+    font-size: 16px;
+    letter-spacing: 3px;
+}
+
+.section5 h1 {
+    margin: 5% 10% 5% 10%;
+    font-family: "Domine", sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    margin-top: 0;
+    font-size: 60px;
+}
+
+.section5 .sectionImages {
+    display: flex;
+    justify-content: space-around;
+    margin :5% 5%;
+}
+
+.section6 h2 {
+    margin: 5% 10% 5% 10%;
+    font-family: "Metropolis Regular", sans-serif;
+    font-style: bold;
+    font-weight: bolder;
+    margin-top: 100px;
+    font-size: 35px;
+    text-align: center;
+    align-items: center;
+}
+
+.section6 .hori {
+    border: 1px solid rgba(0, 0, 0, 0.15);
+    background: rgba(0, 0, 0, 0.15) ;
+    margin: 0% 5%;
+}
+
+.section6 .aboutPerson {
+    display: flex;
+    margin-left: 10%;
+}
+
+.section6 .aboutPerson .firstPerson {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.section6 .aboutPerson .firstPersonInfo {
+    display: flex;
+    flex-direction: column;
+    margin: 4%;
+    width: 30%;
+}
+
+.section6 .line {
+    border-left: 1px solid rgba(0, 0, 0, 0.15);
+    height: 50px;
+    width: 1px;
+    background-color: rgba(0, 0, 0, 0.15);
+}
+
+.section6 .image img {
+    border-radius: 50%;
+}
+
+.section6 p {
+    color: rgba(85, 85, 85, 0.95);
+    font-family: "Metropolis Regular", sans-serif;
+    letter-spacing: 1px;
+    font-size: 120%;
+    line-height: 150%;
+}
+
+.section6 h4 {
+    font-family: "Metropolis Regular", sans-serif;
+    font-weight: bold;
+    letter-spacing: 1px;
+    font-size: 120%;
+    line-height: 150%;
+    margin-top: 8%;
+}
+
+.section6 h5 {
+    color: rgba(85, 85, 85, 0.95);
+    font-family: "Metropolis Regular", sans-serif;
+    font-weight: lighter;
+    letter-spacing: 1px;
+    font-size: 80%;
+    line-height: 150%;
+}
+
+.section7 h3 {
+    margin: 0% 10% 2% 10%;
+    padding-top: 10%;
+    top: 0;
+    font-family: "Metropolis Regular", sans-serif;
+    color: #e94e3b;
+    font-weight: light;
+    font-size: 16px;
+    letter-spacing: 3px;
+}
+
+.section7 h1 {
+    margin: 5% 10% 2% 10%;
+    font-family: "Domine", sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    margin-top: 0;
+    font-size: 60px;
+}
+
+.section7 .sectionImages {
+    display: flex;
+    justify-content: space-around;  
+}
+
+.section7 .sectionImages img {
+    margin: 6%;
+    margin-bottom: 15%;
+}
+
+.footer {
+    background-color: rgb(17,17,17);
+}
+
+.footer .companyData {
+    padding-bottom: 10%;
+    display: flex;
+    margin-left: 6%;
+}
+
+.footer .companyData .findUs {
+    width: 40%;
+}
+
+.footer h3 {
+    margin: 0% 10% 2% 10%;
+    padding-top: 10%;
+    top: 0;
+    font-family: "Metropolis Regular", sans-serif;
+    color: #e94e3b;
+    font-weight: light;
+    font-size: 16px;
+    letter-spacing: 3px;
+}
+
+.footer h1 {
+    margin: 5% 10% 2% 10%;
+    font-family: "Domine", sans-serif;
+    color: white;
+    font-style: normal;
+    font-weight: 500;
+    margin-top: 0;
+    font-size: 60px;
+}
+
+.footer .bar {
+    background-color: #e94e3b;
+    height: 1px ;
+    width: 5%;
+    align-items: center;
+    margin-left: 10%;
+    margin-top: 10%;
+}
+
+.footer .info {
+    margin: 5% 10% 2% 10%;
+    font-family: "Metropolis Regular", sans-serif;
+    color: white;
+    font-style: normal;
+    font-weight: 100;
+    margin-top: 30px;
+    font-size: 300%;
+}
+
+.footer .number {
+    color: rgba(255, 255, 255, 0.3);
+    font-size: 170%;
+    letter-spacing: 1px;
+    margin-top: 0;
+}
+
+.footer p {
+    color: rgba(85, 85, 85, 0.95);
+    margin: 5% 10% 2% 10%;
+    font-family: "Metropolis Regular", sans-serif;
+    font-weight: 500;
+    letter-spacing: 1px;
+    font-size: 160%;
+    line-height: 150%;
+}
+
+.footer .companyData .socialIcons {
+    width: 20%;
+    margin-top: 2%;
+}
+
+.footer .companyData .anchor1 {
+    text-decoration: none;
+    color: rgba(85, 85, 85, 0.95);
+    margin-left: 10%;
+    font-family: "Metropolis Regular", sans-serif;
+    font-weight: 500;
+    letter-spacing: 1px;
+    font-size: 100%;
+    line-height: 150%;
+    padding-bottom: 1%;
+}
+
+.footer .companyData .anchor {
+    text-decoration: none;
+    color: rgba(85, 85, 85, 0.95);
+    margin-left: 2%;
+    font-family: "Metropolis Regular", sans-serif;
+    font-weight: 500;
+    letter-spacing: 1px;
+    font-size: 100%;
+    line-height: 150%;
+    padding-bottom: 1%;
+}
+
+.footer .companyData .anchor:hover {
+    border-bottom: 1px solid rgba(85, 85, 85, 0.95);
+}
+
+.footer .companyData .anchor1:hover {
+    border-bottom: 1px solid rgba(85, 85, 85, 0.95);
+}
+
+.footer .companyData .socialIcons .imagesIcon {
+    display: flex;
+}
+
+.footer .companyData .socialIcons .imagesIcon img {
+    width: 25px;
+    margin: 10px;
+    margin-left: 10%;
+    margin-top: 10%;
+}
+
+.containerForm {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    height: 100vh;
+    background-image: url("https://t3.ftcdn.net/jpg/02/09/74/82/360_F_209748224_3R1wKkuJsMns7kyA59gfB1XtMdumje9c.jpg");
+    background-size: cover;
+}
+
+.containerForm .form {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    text-align: center;
+    background-color: white;
+    color: black;
+    border-radius: 30px;
+    width: 25%;
+    height: 80%;
+    font-family: "Domine", sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    text-align: center;
+}
+
+.containerForm .form .welcome h3 {
+    font-size: 150%;
+    font-weight: bold;
+    color :rgba(85, 85, 85, 0.95);
+}
+
+.containerForm .form .message p {
+    font-size: 80%;
+    font-weight: lighter;
+    color :rgba(85, 85, 85, 0.95);
+}
+
+.containerForm .form .email input {
+    width: 80%;
+    height: 220%;
+    padding-left: 10px;
+    border-radius: 10px;
+    border: 1px solid rgba(85, 85, 85, 0.95);
+}
+
+.containerForm .form .email input:focus {
+    outline: none !important;
+    border: 2px solid #e94e3b;
+}
+
+.containerForm .form .password input {
+    width: 80%;
+    height: 220%;
+    padding-left: 10px;
+    border-radius: 10px;
+    border: 1px solid rgba(85, 85, 85, 0.95);
+}
+
+.containerForm .form .password input:focus {
+    outline: none !important;
+    border: 2px solid #e94e3b;
+
+}
+
+.containerForm .form .forgotpassowrd {
+    text-align :right;
+    margin-right: 10%;
+
+}
+
+.containerForm .form .forgotpassowrd a {
+    text-decoration: none;
+    color :rgba(85, 85, 85, 0.95);
+    font-size: 80%;
+    font-weight: bold;
+}
+
+.containerForm .form .btn {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.containerForm .form .btn .loginBtn {
+    width: 80%;
+    height: 40px;
+    border-radius: 10px;
+    border: none;
+    background-color: #e94e3b;
+    color: white;
+    font-weight: bold;
+}
+
+.containerForm .form .btn .otp {
+    width: 80%;
+    height: 40px;
+    border-radius: 10px;
+    border: none;
+    margin-top: 20px;
+    background-color: #e94e3b;
+    color: white;
+    font-weight: bold;
+}
+
+.containerForm .form .haveAccount p {
+    color: rgba(85, 85, 85, 0.95);
+    font-size: 80%;
+}
+
+.containerForm .form .haveAccount p a{
+    text-decoration: none;
+    color: black;
+    font-size : 100%;
+}
+
+.containerForm .SignUpform {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    text-align: center;
+    background-color: white;
+    color: black;
+    border-radius: 30px;
+    width: 25%;
+    height: 80%;
+    font-family: "Domine", sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    text-align: center;
+}
+
+.containerForm .SignUpform .welcome h3 {
+    font-size: 150%;
+    font-weight: bold;
+    color :rgba(85, 85, 85, 0.95);
+}
+
+.containerForm .SignUpform .message p {
+    font-size: 80%;
+    font-weight: lighter;
+    color :rgba(85, 85, 85, 0.95);
+}
+
+.containerForm .SignUpform .fname input {
+    width: 80%;
+    height: 220%;
+    padding-left: 10px;
+    border-radius: 10px;
+    border: 1px solid rgba(85, 85, 85, 0.95);
+}
+
+.containerForm .SignUpform .fname input:focus {
+    outline: none !important;
+    border: 2px solid #e94e3b;
+}
+
+.containerForm .SignUpform .lname input {
+    width: 80%;
+    height: 220%;
+    padding-left: 10px;
+    border-radius: 10px;
+    border: 1px solid rgba(85, 85, 85, 0.95);
+}
+
+.containerForm .SignUpform .lname input:focus {
+    outline: none !important;
+    border: 2px solid #e94e3b;
+}
+
+.containerForm .SignUpform .number input {
+    width: 80%;
+    height: 220%;
+    padding-left: 10px;
+    border-radius: 10px;
+    border: 1px solid rgba(85, 85, 85, 0.95);
+}
+
+.containerForm .SignUpform .number input:focus {
+    outline: none !important;
+    border: 2px solid #e94e3b;
+}
+
+.containerForm .SignUpform .email input {
+    width: 80%;
+    height: 220%;
+    padding-left: 10px;
+    border-radius: 10px;
+    border: 1px solid rgba(85, 85, 85, 0.95);
+}
+
+.containerForm .SignUpform .email input:focus {
+    outline: none !important;
+    border: 2px solid #e94e3b;
+}
+
+.containerForm .SignUpform .password input {
+    width: 80%;
+    height: 220%;
+    padding-left: 10px;
+    border-radius: 10px;
+    border: 1px solid rgba(85, 85, 85, 0.95);
+}
+
+.containerForm .SignUpform .password input:focus {
+    outline: none !important;
+    border: 2px solid #e94e3b;
+
+}
+
+.containerForm .SignUpform .forgotpassowrd {
+    text-align :right;
+    margin-right: 10%;
+
+}
+
+.containerForm .SignUpform .forgotpassowrd a {
+    text-decoration: none;
+    color :rgba(85, 85, 85, 0.95);
+    font-size: 80%;
+    font-weight: bold;
+}
+
+.containerForm .SignUpform .btn {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.containerForm .SignUpform .btn .signup {
+    width: 80%;
+    height: 45px;
+    border-radius: 10px;
+    border: none;
+    background-color: #e94e3b;
+    color: white;
+    font-weight: bold;
+}
+
+.containerForm .SignUpform .haveAccount p {
+    color: rgba(85, 85, 85, 0.95);
+    font-size: 80%;
+}
+
+.containerForm .SignUpform .haveAccount p a{
+    text-decoration: none;
+    color: black;
+    font-size : 100%;
+}
+
+#preloader {
+    background: black url("./gif/Preloader.svg") no-repeat center;
+    background-size: 10%;
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+    z-index: 100;
+}
